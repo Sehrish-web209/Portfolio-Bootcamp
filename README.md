@@ -1,16 +1,16 @@
-Sehrish Portfolio Website
+## Sehrish Portfolio Website
 
 A personal portfolio website created as an HTML assignment. 
 This project focuses on building a structured multi-page website using HTML5.
 
-Technologies Used:
+## Technologies Used:
 - HTML5
 
-Pages:
+## Pages:
 - Home
 - About Me
 - Contact Me
-- 
+- Hobbies
 
 ## Project Structure
 
@@ -24,8 +24,11 @@ My Portfolio/
 ├── Myself.jpeg
 └── README.md
 ```
+## Live Demo
 
-Future Enhancements:
+[View My Portfolio Website]( https://sehrish-web209.github.io/Portfolio-Bootcamp/)
+
+## Future Enhancements:
 - Styling with CSS
 - Adding interactivity with JavaScript
 - Adding backend functionality using PHP and database integration
