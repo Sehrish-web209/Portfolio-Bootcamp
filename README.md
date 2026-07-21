@@ -48,3 +48,12 @@ Portfolio-Bootcamp/
 - Build dynamic features using PHP
 - Integrate a database
 - Improve accessibility and user experience
+
+## Author
+
+**Sehrish Maqbool**
+BS IT student(7th semester)
+
+GitHub: https://github.com/Sehrish-web209
+
+LinkedIn: https://www.linkedin.com/in/sehrish-maqbool-b5b00237a
