@@ -4,69 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sehrish | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Contact me</h1>
         <p>Have a question or want to connect? Feel free to send me a message </p>
     <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About me</a>
-            <a href="contact.html">Contact me</a>
-            <a href="hobbies.html">Hobbies</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+        </ul>
     </nav>
     </header>
     <main>
-        <section>
+        <section class="contact-section">
             <h2>Get in Touch</h2>
             <p>I would love to hear from you. Please fill out the form below, and I'll get back to you as soon as possible.</p>
             <form>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+                </div>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required><br><br>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required>
+                </div>
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="e.g., Project Inquiry"><br><br>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="e.g., Project Inquiry">
+                </div>
 
-                <label>Gender:</label>
-                <input type="radio" id="male" name="gender" value="Male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="Female">
-                <label for="Female">Female</label><br><br>
+                <div class="form-group">
+                    <label>Gender:</label>
 
-                <label for="country">country:</label>
-                <select id="country" name="country">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
                     <option value="">Select Country</option>
                     <option value="Pakistan">Pakistan</option>
                     <option value="saudi-arabia">Saudi Arabia</option>
                     <option value="afghanistan">Afghanistan</option>
                     <option value="india">India</option>
                     <option value="united-states">United States</option>
-                </select><br><br>
+                </select>
+                </div>
 
-                <label>Preferred Contact Method:</label><br>
-                <input type="checkbox" id="email-contact" name="contact" value="Email">
-                <label for="email-contact">Email</label>
-                <input type="checkbox" id="phone-contact" name="contact" value="Phone">
-                <label for="phone-contact">Phone</label><br><br>
+                <div class="form-group">
+                    <label>Preferred Contact Method:</label>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" placeholder="Enter your message..." rows="5" cols="30"></textarea><br><br>
+                    <input type="checkbox" id="email-contact" name="contact" value="Email">
+                    <label for="email-contact">Email</label>
 
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
+                    <input type="checkbox" id="phone-contact" name="contact" value="Phone">
+                    <label for="phone-contact">Phone</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" placeholder="Enter your message..." rows="5" cols="30"></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
             </form>
         </section>
     </main>
     <footer>
-        <p>© 2026 Sehrish. All Rights Reserved. <br>
+        <p>© 2026 Sehrish Maqbool. All Rights Reserved. <br>
         Thank you for reaching out.</p>
-        <div>
+        <div class="footer-contact">
             <h3>Contact info</h3>
             <ul>
                 <li>Email: <a href="mailto:sehrmaqbool@gmail.com">sehrmaqbool@gmail.com</a></li>
