@@ -73,6 +73,7 @@ Portfolio-Bootcamp/
 ├── Myself.jpeg
 │
 ├── images/
+│   ├── Myself.jpeg
 │   ├── Slider1.jpeg
 │   ├── Slider2.jpeg
 │   └── Slider3.jpeg
