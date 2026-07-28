@@ -375,72 +375,6 @@ main section:last-child p {
         transform: translateY(0);
     }
 }
-@media (max-width: 768px) {
-    header{
-        padding: 1rem 0.8rem;
-    }
-    header h1{
-        font-size: 1.6rem;
-        margin-bottom: 0.3rem;
-    }
-    header p{
-        font-size: 0.95rem;
-        margin-bottom: 0.6rem;
-    }
-    nav ul{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    nav a{
-        padding: 0.3rem 0.5rem;
-        font-size: 0.95rem;
-    }
-    footer{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 2rem;
-    }
-    .articles-container{
-        flex-direction: column;
-    }
-}
-@media (max-width: 400px) {
-    section {
-        padding: 1rem;
-    }
-    section h2 {
-        font-size: 1.4rem;
-    }
-    section p,
-    .about-section p,
-    .contact-section p,
-    .hobbies-section p {
-        font-size: 0.95rem;
-        line-height: 1.5;
-    }
-    article {
-        padding: 1rem;
-    }
-    .skills-list,
-    .hobbies-list {
-        gap: 0.8rem;
-    }
-    .hobbies-list li {
-    min-width: 160px;
-    width: auto;
-    padding: 0.7rem 1rem;
-    font-size: 0.95rem;
-    }
-    .skills-list li {
-    min-width: 140px;
-    width: auto;
-    justify-content: center;
-    text-align: center;
-   }
-}
 
 #darkBtn{
     background: #2563eb;
@@ -597,4 +531,154 @@ main section:last-child p {
     font-size:14px;
     margin-top:6px;
     font-weight:600;
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 1rem 0.8rem;
+    }
+    header h1{
+        font-size: 1.6rem;
+        margin-bottom: 0.3rem;
+    }
+    header p{
+        font-size: 0.95rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    nav ul{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+    }
+    nav a{
+        padding: 0.3rem 0.5rem;
+        font-size: 0.95rem;
+    }
+    #darkBtn{
+        margin-left: 1rem;
+        white-space: nowrap;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    .articles-container{
+        flex-direction: column;
+    }
+
+   .slider{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    }
+
+    .slider img{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .slider button{
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .journey-text{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}    
+@media (max-width: 400px) {
+     nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:8px;
+    }
+
+    nav ul{
+        display:grid;
+        grid-template-columns:repeat(2, auto);
+        justify-content:center;
+        gap:8px 18px;
+        margin:0;
+        padding:0;
+    }
+
+    nav a{
+        white-space:nowrap;
+        font-size:0.85rem;
+        padding:0.3rem 0.4rem;
+    }
+
+    #darkBtn{
+        margin:0;
+        padding:6px 12px;
+        font-size:12px;
+        width:auto;
+    }
+    section {
+        padding: 1rem;
+    }
+    section h2 {
+        font-size: 1.4rem;
+    }
+    section p,
+    .about-section p,
+    .contact-section p,
+    .hobbies-section p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    article {
+        padding: 1rem;
+    }
+    .skills-list,
+    .hobbies-list {
+        gap: 0.8rem;
+    }
+    .hobbies-list li {
+    min-width: 160px;
+    width: auto;
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+    }
+    .skills-list li {
+    min-width: 140px;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+   }
+    .slider{
+        gap: 2px;
+    }
+
+    .slider img{
+        width: 180px;
+        max-width: 180px;
+        height: auto;
+    }
+
+    .slider button{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        padding: 0;
+        flex-shrink: 0;
+    }
+    #developer-journey{
+        padding: 35px 15px;
+    }
+
+    .journey-text{
+        font-size: 14px;
+        line-height: 1.6;
+    }
 }
