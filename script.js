@@ -1,4 +1,3 @@
-// DARK MODE
 
 const darkBtn = document.getElementById("darkBtn");
 const body = document.body;
@@ -25,9 +24,9 @@ const portfolio = {
 
 console.log(portfolio.owner);
 const images = [
-    "images/slider1.jpeg",
-    "images/slider2.jpeg",
-    "images/slider3.jpeg"
+    "images/Slider1.jpeg",
+    "images/Slider2.jpeg",
+    "images/Slider3.jpeg"
 ];
 for(let i = 0; i < images.length; i++){
     console.log(images[i]);
