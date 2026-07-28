@@ -85,11 +85,11 @@ Portfolio-Bootcamp/
 
 ## Future Enhancements
 
--Improve accessibility features
--Add backend functionality for the contact form
--Store form submissions using a database
--Add more interactive components
--Further improve UI/UX design
+- Improve accessibility features
+- Add backend functionality for the contact form
+- Store form submissions using a database
+- Add more interactive components
+- Further improve UI/UX design
 
 ## Author
 
