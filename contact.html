@@ -24,15 +24,17 @@
         <section class="contact-section">
             <h2>Get in Touch</h2>
             <p>I would love to hear from you. Please fill out the form below, and I'll get back to you as soon as possible.</p>
-            <form>
+            <form id="contactForm" autocomplete="off">
                 <div class="form-group">
                     <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+                    <input type="text" id="fullname" name="portfolio_fullname" autocomplete="section-portfolio name" placeholder="Enter your name">
+                    <p id="nameError" class="error-message"></p>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" >
+                    <p id="emailError" class="error-message"></p>
                 </div>
 
                 <div class="form-group">
