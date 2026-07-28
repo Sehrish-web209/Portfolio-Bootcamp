@@ -583,13 +583,11 @@ main section:last-child p {
         max-width: 500px;
         height: auto;
     }
-
     .slider button{
         width: 50px;
         height: 50px;
         font-size: 22px;
     }
-
     .journey-text{
         font-size: 16px;
         padding: 0 10px;
@@ -665,7 +663,6 @@ main section:last-child p {
         max-width: 180px;
         height: auto;
     }
-
     .slider button{
         width: 30px;
         height: 30px;
@@ -676,7 +673,6 @@ main section:last-child p {
     #developer-journey{
         padding: 35px 15px;
     }
-
     .journey-text{
         font-size: 14px;
         line-height: 1.6;

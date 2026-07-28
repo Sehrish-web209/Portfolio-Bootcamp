@@ -3,9 +3,7 @@
 const darkBtn = document.getElementById("darkBtn");
 const body = document.body;
 
-darkBtn.addEventListener("click", toggleDarkMode);
-
-function toggleDarkMode(){
+const toggleDarkMode = () => {
 
     body.classList.toggle("dark-mode");
 
@@ -16,15 +14,30 @@ function toggleDarkMode(){
         darkBtn.innerHTML = "🌙 Dark Mode";
     }
 
-}
+};
+darkBtn.addEventListener("click", toggleDarkMode);
+
+const portfolio = {
+    owner: "Sehrish Maqbool",
+    role: "BSIT Student",
+    university: "University"
+};
+
+console.log(portfolio.owner);
 const images = [
     "images/slider1.jpeg",
     "images/slider2.jpeg",
     "images/slider3.jpeg"
 ];
+for(let i = 0; i < images.length; i++){
+    console.log(images[i]);
+}
 
 let currentImage = 0;
 const sliderImage = document.getElementById("sliderImage");
+if(sliderImage){
+    sliderImage.style.transition = "0.4s ease";
+}
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
 
