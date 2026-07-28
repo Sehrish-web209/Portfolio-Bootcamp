@@ -1,28 +1,63 @@
 # Sehrish Portfolio Website
 
-A personal portfolio website developed as part of a Web Development Bootcamp assignment. The project consists of multiple responsive pages built with HTML5 and CSS3, focusing on modern design, clean layout, and responsive user experience.
+A personal portfolio website developed as part of a Web Development journey. This project is a responsive multi-page portfolio website built using HTML5, CSS3, and JavaScript. It focuses on clean design, responsive layouts, interactive features, and a user-friendly experience.
 
 ## Technologies Used
+
 - HTML5
 - CSS3
+- JavaScript
 
 ## Features
-- Responsive design (Mobile First)
-- Multi-page portfolio website
-- Flexbox-based layouts
+
+- Responsive multi-page portfolio website
+- Mobile-friendly design
+- Sticky navigation header
 - Styled navigation bar
 - Profile section with image styling
 - Skills and hobbies cards
 - Responsive contact form
-- Hover effects and transitions
+- Client-side form validation using JavaScript
+- Email and name validation
+- Dark Mode toggle functionality
+- Developer Journey image slider
+- JavaScript DOM manipulation
+- Interactive buttons and dynamic content updates
+- Hover effects and smooth transitions
 - CSS animations
-- Sticky navigation header
+- Flexbox-based layouts
 
 ## Pages
+
 - Home
 - About Me
 - Contact Me
 - Hobbies
+
+## JavaScript Functionality
+
+The project includes JavaScript-based interactivity using:
+
+- Variables (`let`, `const`)
+- Data types (String, Number, Boolean, Array, Object)
+- Functions and Arrow Functions
+- Conditional statements (`if/else`)
+- For loops
+- DOM selection using:
+  - `getElementById()`
+  - `document`
+- DOM manipulation using:
+  - `textContent`
+  - `innerHTML`
+  - `style`
+  - `classList`
+
+Implemented JavaScript features:
+
+- Dark Mode toggle using class manipulation
+- Image slider using arrays and DOM updates
+- Contact form validation for user input
+- Dynamic button interactions
 
 ## Project Structure
 
@@ -34,25 +69,33 @@ Portfolio-Bootcamp/
 ├── contact.html
 ├── hobbies.html
 ├── style.css
+├── script.js
 ├── Myself.jpeg
+│
+├── images/
+│   ├── Slider1.jpeg
+│   ├── Slider2.jpeg
+│   └── Slider3.jpeg
+│
 └── README.md
 ```
-
 ## Live Demo
 
 [View My Portfolio Website](https://sehrish-web209.github.io/Portfolio-Bootcamp/)
 
 ## Future Enhancements
-- Add JavaScript for interactivity
-- Add form validation
-- Build dynamic features using PHP
-- Integrate a database
-- Improve accessibility and user experience
+
+-Improve accessibility features
+-Add backend functionality for the contact form
+-Store form submissions using a database
+-Add more interactive components
+-Further improve UI/UX design
 
 ## Author
 
 **Sehrish Maqbool**
-BS IT student(7th semester)
+
+BS IT Student (7th Semester)
 
 GitHub: https://github.com/Sehrish-web209
 
