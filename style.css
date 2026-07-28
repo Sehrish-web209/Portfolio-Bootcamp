@@ -538,3 +538,49 @@ main section:last-child p {
     color:white;
     border:1px solid #6b7280;
 }
+.slider-section{
+    text-align:center;
+    margin-top:60px;
+}
+
+.slider{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+#developer-journey{
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.journey-text{
+    max-width: 750px;
+    margin: 15px auto 30px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+.dark .journey-text{
+    color: #d1d5db;
+}
+
+.slider img{
+    width:600px;
+    height:500px;
+    object-fit:contain;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    background:#f8fafc;
+}
+
+.slider button{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:26px;
+}
