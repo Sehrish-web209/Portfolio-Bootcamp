@@ -14,8 +14,9 @@ const toggleDarkMode = () => {
     }
 
 };
-darkBtn.addEventListener("click", toggleDarkMode);
-
+if(darkBtn){
+    darkBtn.addEventListener("click", toggleDarkMode);
+}
 const portfolio = {
     owner: "Sehrish Maqbool",
     role: "BSIT Student",
@@ -59,26 +60,28 @@ const prevBtn = document.getElementById("prev");
 }
 // Contact Form Validation
 
+
 const contactForm = document.getElementById("contactForm");
 
 if(contactForm){
     contactForm.addEventListener("submit", function(event){
-        event.preventDefault();
+        let isValid = true;
         const fullName = document.getElementById("fullname").value.trim();
         const email = document.getElementById("email").value.trim();
         const nameError = document.getElementById("nameError");
         const emailError = document.getElementById("emailError");
             
+
         if(fullName === ""){
             nameError.textContent = "❌ Full Name is required.";
             nameError.className = "error-message";
+            isValid = false;
         }
-        
         else if(fullName.length < 3){
             nameError.textContent = "❌ Name must be at least 3 characters.";
             nameError.className = "error-message";
+            isValid = false;
         }
-
         else{
             nameError.textContent = "✅ Looks good!";
             nameError.className = "success-message";
@@ -86,19 +89,24 @@ if(contactForm){
 
        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+       
         if(email === ""){
             emailError.textContent = "❌ Email is required.";
             emailError.className = "error-message";
+            isValid = false;
         }
-        else if(emailPattern.test(email)){
+        else if(!emailPattern.test(email)){
+            emailError.textContent = "❌ Invalid Email.";
+            emailError.className = "error-message";
+            isValid = false;
+        }
+        else{
             emailError.textContent = "✅ Valid Email.";
             emailError.className = "success-message";
         }
-        else{
-
-            emailError.textContent = "❌ Invalid Email.";
-            emailError.className = "error-message";
-
+        console.log(isValid);
+        if(!isValid){
+            event.preventDefault();
         }
     });
 }
