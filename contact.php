@@ -1,4 +1,5 @@
 <?php
+include "db.php";
 if($_POST){
 
     $name = $_POST['portfolio_fullname'];
@@ -16,13 +17,18 @@ if($_POST){
 
     }
     elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        
+
     echo "Invalid email format.";
-   }
+    }
+
     else{
+    $sql = "INSERT INTO contact_messages (name, email, phone, subject, gender, country, message)
+    VALUES ('$name', '$email', '$phone', '$subject', '$gender', '$country', '$message')";
 
-        echo "Form Submitted Successfully!<br><br>";
+    $result = mysqli_query($connection, $sql);
 
+    if($result){
+        echo "Thank you for contacting us!<br><br>";
         echo "Name: " . $name . "<br>";
         echo "Email: " . $email . "<br>";
         echo "Phone: " . $phone . "<br>";
@@ -30,10 +36,13 @@ if($_POST){
         echo "Gender: " . $gender . "<br>";
         echo "Country: " . $country . "<br>";
         echo "Message: " . $message . "<br>";
-
     }
+    else{
 
-}
+    echo "Error: " . mysqli_error($connection);
+    }
+   }
+}  
 else{
 
     echo "Please submit the form.";
