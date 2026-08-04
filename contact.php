@@ -36,6 +36,8 @@ if($_POST){
         echo "Gender: " . $gender . "<br>";
         echo "Country: " . $country . "<br>";
         echo "Message: " . $message . "<br>";
+
+       echo "<br><br><a href='index.html'>← Back to Home</a>";
     }
     else{
 
