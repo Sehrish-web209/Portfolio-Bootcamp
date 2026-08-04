@@ -60,7 +60,6 @@ const prevBtn = document.getElementById("prev");
 }
 // Contact Form Validation
 
-
 const contactForm = document.getElementById("contactForm");
 
 if(contactForm){

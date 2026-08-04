@@ -15,6 +15,10 @@ if($_POST){
         echo "Please fill all required fields.";
 
     }
+    elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        
+    echo "Invalid email format.";
+   }
     else{
 
         echo "Form Submitted Successfully!<br><br>";
